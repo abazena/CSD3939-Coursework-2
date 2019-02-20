@@ -1,48 +1,50 @@
 package Models;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Digit {
 
-    private int actualValue;
+    private int digitClass;
 
-    private List<Integer> bitmaps;
+    private int[] bitmaps;
 
     public Digit(String actualValue, List<String> bitmaps)
     {
-        this.actualValue = Integer.parseInt(actualValue);
+        this.digitClass = Integer.parseInt(actualValue);
         this.bitmaps = parseBitmaps(bitmaps);
     }
 
-    private List<Integer> parseBitmaps(List<String> bitmaps)
+    private int[] parseBitmaps(List<String> bitmaps)
     {
-        List<Integer> parsedBitmaps = new ArrayList<>();
-        for (int i = 0; i <bitmaps.size(); i++ )//printDigit
+        int[] bitmapsTable = new int[bitmaps.size()];
+
+
+        for(int i = 0; i< bitmaps.size(); i++)
         {
-            if(i == bitmaps.size() -1)
-            {
-                continue;
-            }
-            parsedBitmaps.add(Integer.parseInt(bitmaps.get(i)));
+
+          bitmapsTable[i] = Integer.parseInt(bitmaps.get(i));
+
         }
-        return parsedBitmaps;
+
+
+
+        return bitmapsTable;
     }
 
-    public int getActualValue()
+    public int getDigitClass()
     {
-        return actualValue;
+        return digitClass;
     }
 
-    public List<Integer> getBitmaps()
+    public int[] getBitmaps()
     {
         return bitmaps;
     }
 
     public void printDigit()
     {
-        System.out.println("bitmaps: " + Arrays.toString(bitmaps.toArray()));
-        System.out.println("Actual Value: " + actualValue);
+        System.out.println("bitmaps: " + Arrays.toString(bitmaps));
+        System.out.println("Actual Value: " + digitClass);
 
     }
 }
