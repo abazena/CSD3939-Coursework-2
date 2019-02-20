@@ -13,9 +13,7 @@ public class Main {
 
     public static void main(String args[]) throws IOException
     {
-        ArrayList<Digit> dataSet = new ArrayList<>(loadDataSet("DataSets/DataSet1.csv"));
-
-        int halfSize = dataSet.size() /2;
+        ArrayList<Digit> dataSet = new ArrayList<>(loadDataSet("DataSets/DataSet2.csv"));
 
         NearestNeighborDriver nearestNeighborDriver = new NearestNeighborDriver(dataSet);
 
@@ -32,15 +30,11 @@ public class Main {
             {
                 matches++;
             }
-            if(i == testingDataSet.size() -1)
-            {
-                double accuracy = (matches / i - 1) ;
-                System.out.println("Accuracy: " + accuracy );
-                System.out.println("Size: " + i);
-                System.out.println("Matches: " + (matches - 1));
-
-            }
         }
+        double accuracy =  matches  * 100 / testingDataSet.size()x` `;
+        System.out.println("Accuracy: " + accuracy );
+        System.out.println("Size: " + (testingDataSet.size() - 1);
+        System.out.println("Matches: " + (matches - 1));
     }
 
 

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CLI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CLI/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Digit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Digit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CLI/NearestNeighbor/NearestNeighborDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CLI/NearestNeighbor/NearestNeighborDriver.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,22 +65,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="4" />
+          <entry key="java" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1436" />
+          <entry key="java" value="2672" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1436" />
+          <entry key="JAVA" value="2672" />
         </counts>
       </usages-collector>
     </session>
@@ -91,13 +90,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CLI/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-87">
-              <caret line="36" column="42" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="42" />
+            <state relative-caret-position="440">
+              <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#loadDataSet#0;class#Main#0" />
               </folding>
             </state>
           </provider>
@@ -106,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utils/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="520">
+              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,11 +115,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CLI/SimulatedAnnealing/SimulatedAnnealingDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="118" column="2" selection-start-line="118" selection-start-column="2" selection-end-line="118" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#calculateAcceptanceProbability#0;class#SimulatedAnnealingDriver#0" />
+                <element signature="method#randomIntInRange#0;class#SimulatedAnnealingDriver#0" />
+                <element signature="method#loadData#0;class#SimulatedAnnealingDriver#0" />
+                <element signature="method#loadDataTxtFile#0;class#SimulatedAnnealingDriver#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CLI/NearestNeighbor/NearestNeighborDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="31" column="63" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="63" />
+            <state relative-caret-position="180">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/Digit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="160">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#793#794#0" expanded="true" />
@@ -166,6 +182,7 @@
         <option value="$PROJECT_DIR$/src/CLI/NearestNeighbor/Driver.java" />
         <option value="$PROJECT_DIR$/src/Models/Digit.java" />
         <option value="$PROJECT_DIR$/src/CLI/NearestNeighbor/NearestNeighborDriver.java" />
+        <option value="$PROJECT_DIR$/src/CLI/SimulatedAnnealing/SimulatedAnnealingDriver.java" />
         <option value="$PROJECT_DIR$/src/CLI/Main.java" />
       </list>
     </option>
@@ -178,9 +195,30 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="902" />
+    <option name="x" value="-88" />
+    <option name="y" value="94" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>IntegerDivisionInFloatingPointContext</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -242,7 +280,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550676812506" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550691563192" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../11Feb2019/15Dec2018/CSD3939 Coursework1 TSP" />
     <property name="recentsLimit" value="5" />
@@ -372,12 +410,12 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1550336915412" duration="7012000" />
       <workItem from="1550607318401" duration="633000" />
-      <workItem from="1550664438741" duration="12226000" />
+      <workItem from="1550664438741" duration="20806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21173000" />
+    <option name="totallyTimeSpent" value="29753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -393,7 +431,7 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41323212" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3253796" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,20 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/Digit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="160">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#793#794#0" expanded="true" />
@@ -487,10 +515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CLI/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Utils/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="42" />
+        <state relative-caret-position="520">
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -499,10 +527,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CLI/NearestNeighbor/NearestNeighborDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" column="63" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="63" />
+        <state relative-caret-position="180">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CLI/SimulatedAnnealing/SimulatedAnnealingDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="118" column="2" selection-start-line="118" selection-start-column="2" selection-end-line="118" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#calculateAcceptanceProbability#0;class#SimulatedAnnealingDriver#0" />
+            <element signature="method#randomIntInRange#0;class#SimulatedAnnealingDriver#0" />
+            <element signature="method#loadData#0;class#SimulatedAnnealingDriver#0" />
+            <element signature="method#loadDataTxtFile#0;class#SimulatedAnnealingDriver#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CLI/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#loadDataSet#0;class#Main#0" />
           </folding>
         </state>
       </provider>
