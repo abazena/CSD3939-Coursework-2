@@ -2,6 +2,7 @@ package CLI.KNearestNeighbor;
 
 import Models.ClassifierResult;
 import Models.Digit;
+import Models.KNearestNeighborResult;
 import Utils.Utility;
 
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ public class KNearestNeighborDriver {
         DIGITS_BANK = new ArrayList<>(digitsBank);
         K = k;
     }
-    public ArrayList<ClassifierResult> getKNearestNeighbor(Digit digit)
+    public KNearestNeighborResult getKNearestNeighbor(Digit digit)
     {
         ArrayList<ClassifierResult> classifierResults = new ArrayList<>();
 
@@ -29,7 +30,7 @@ public class KNearestNeighborDriver {
             classifierResults.add(new ClassifierResult(dgt.getDigitClass() , newDistance));
         }
 
-        return new ArrayList<>( Utility.sortResults(classifierResults).subList(0 , K));
+        return new KNearestNeighborResult(new ArrayList<>( Utility.sortResults(classifierResults).subList(0 , K)) , K*4);
     }
 
 }
