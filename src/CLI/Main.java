@@ -1,6 +1,7 @@
 package CLI;
 
 import CLI.NearestNeighbor.NearestNeighborDriver;
+import CLI.SimulatedAnnealing.SimulatedAnnealingDriver;
 import Models.Digit;
 import Utils.Parser;
 
@@ -13,7 +14,7 @@ public class Main {
 
     public static void main(String args[]) throws IOException
     {
-        ArrayList<Digit> dataSet = new ArrayList<>(loadDataSet("DataSets/DataSet2.csv"));
+        ArrayList<Digit> dataSet = new ArrayList<>(loadDataSet("DataSets/DataSet1.csv"));
 
         NearestNeighborDriver nearestNeighborDriver = new NearestNeighborDriver(dataSet);
 
@@ -25,16 +26,34 @@ public class Main {
         {
             int digitClass = nearestNeighborDriver.getNearestNeighbor(testingDataSet.get(i));
 
-            System.out.println("Nearest Neighbor: actual digit class: " +testingDataSet.get(i).getDigitClass() + " result digit class: " + digitClass );//digitClass
+           // System.out.println("Nearest Neighbor: actual digit class: " +testingDataSet.get(i).getDigitClass() + " result digit class: " + digitClass );//digitClass
             if(testingDataSet.get(i).getDigitClass()  == digitClass)
             {
                 matches++;
             }
         }
-        double accuracy =  matches  * 100 / testingDataSet.size()x` `;
+        double accuracy =  matches  * 100 / testingDataSet.size();
         System.out.println("Accuracy: " + accuracy );
-        System.out.println("Size: " + (testingDataSet.size() - 1);
+        System.out.println("Size: " + (testingDataSet.size() - 1));
         System.out.println("Matches: " + (matches - 1));
+
+        matches = 0;
+        for(int i = 0; i <testingDataSet.size() ; i++)
+        {
+            SimulatedAnnealingDriver simulatedAnnealingDriver = new SimulatedAnnealingDriver(dataSet);
+            int classifierResult = simulatedAnnealingDriver.getClosestMatch(testingDataSet.get(i));
+            System.out.println("classifier Result: actual digit class: " +testingDataSet.get(i).getDigitClass() + " result digit class: " + classifierResult );
+
+            if(testingDataSet.get(i).getDigitClass()  == classifierResult)
+            {
+                matches++;
+            }
+        }
+        double accuracySa =  matches  * 100 / testingDataSet.size();
+        System.out.println("Accuracy: " + accuracySa );
+        System.out.println("Size: " + (testingDataSet.size() - 1));
+        System.out.println("Matches: " + (matches - 1));
+
     }
 
 
